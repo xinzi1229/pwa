@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2196f3">
+    <!-- iOS PWA 支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hello PWA">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello PWA</h1>
+        </header>
+        <main>
+            <div class="card">
+                <h2>欢迎使用 PWA</h2>
+                <p>这是一个简单的 PWA 示例，使用 Cloudflare Pages 部署。</p>
+                <button id="refreshBtn">刷新数据</button>
+                <div id="statusMessage"></div>
+            </div>
+            
+            <div class="card">
+                <h2>离线功能</h2>
+                <p>尝试断开网络连接，然后刷新页面。此 PWA 仍可正常工作！</p>
+            </div>
+            
+            <div class="card">
+                <h2>安装提示</h2>
+                <p id="installPrompt">在支持的浏览器中，您可以将此应用安装到主屏幕。</p>
+                <button id="installBtn" style="display: none;">安装应用</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Hello PWA</p>
+        </footer>
+    </div>
+
+    <!-- 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+              </html>
